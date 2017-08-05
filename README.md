@@ -1,1 +1,1 @@
-twrp_android_device_samsung_C9000
+TWRP device tree for Samsung Galaxy C9 Pro (SM-C9000)

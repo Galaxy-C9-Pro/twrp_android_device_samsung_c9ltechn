@@ -1,0 +1,149 @@
+root@c9ltechn:/ # cat /proc/partitions
+major minor  #blocks  name
+
+   7        0      98304 loop0
+ 179        0   61071360 mmcblk0
+ 179        1        512 mmcblk0p1
+ 179        2        512 mmcblk0p2
+ 179        3         32 mmcblk0p3
+ 179        4         32 mmcblk0p4
+ 179        5       2048 mmcblk0p5
+ 179        6        512 mmcblk0p6
+ 179        7       2048 mmcblk0p7
+ 179        8        512 mmcblk0p8
+ 179        9       3072 mmcblk0p9
+ 179       10         16 mmcblk0p10
+ 179       11        512 mmcblk0p11
+ 179       12        256 mmcblk0p12
+ 179       13        512 mmcblk0p13
+ 179       14        128 mmcblk0p14
+ 179       15        128 mmcblk0p15
+ 179       16       9648 mmcblk0p16
+ 179       17       3072 mmcblk0p17
+ 179       18       3072 mmcblk0p18
+ 179       19      10240 mmcblk0p19
+ 179       20      14336 mmcblk0p20
+ 179       21      32768 mmcblk0p21
+ 179       22      32768 mmcblk0p22
+ 179       23       7168 mmcblk0p23
+ 179       24       5121 mmcblk0p24
+ 179       25       6135 mmcblk0p25
+ 179       26       3072 mmcblk0p26
+ 179       27          8 mmcblk0p27
+ 179       28      32768 mmcblk0p28
+ 179       29       1024 mmcblk0p29
+ 179       30       1024 mmcblk0p30
+ 179       31        512 mmcblk0p31
+ 259        0         32 mmcblk0p32
+ 259        1       1024 mmcblk0p33
+ 259        2        256 mmcblk0p34
+ 259        3      16384 mmcblk0p35
+ 259        4     106720 mmcblk0p36
+ 259        5      40960 mmcblk0p37
+ 259        6       9216 mmcblk0p38
+ 259        7    4702208 mmcblk0p39
+ 259        8     204800 mmcblk0p40
+ 259        9   55812076 mmcblk0p41
+ 179       32       4096 mmcblk0rpmb
+ 253        0    1048576 vnswap0
+ 179       64  125565952 mmcblk1
+ 179       65  125549568 mmcblk1p1
+ 254        0   55812060 dm-0
+
+
+root@c9ltechn:/ # ls -l /dev/block/platform/soc.0/7824900.sdhci/by-name/       
+lrwxrwxrwx root     root              2016-05-30 03:33 aboot -> /dev/block/mmcblk0p5
+lrwxrwxrwx root     root              2016-05-30 03:33 apdp -> /dev/block/mmcblk0p14
+lrwxrwxrwx root     root              2016-05-30 03:33 apnhlos -> /dev/block/mmcblk0p37
+lrwxrwxrwx root     root              2016-05-30 03:33 backup -> /dev/block/mmcblk0p25
+lrwxrwxrwx root     root              2016-05-30 03:33 boot -> /dev/block/mmcblk0p21
+lrwxrwxrwx root     root              2016-05-30 03:33 bota -> /dev/block/mmcblk0p23
+lrwxrwxrwx root     root              2016-05-30 03:33 cache -> /dev/block/mmcblk0p40
+lrwxrwxrwx root     root              2016-05-30 03:33 cmnlib -> /dev/block/mmcblk0p12
+lrwxrwxrwx root     root              2016-05-30 03:33 config -> /dev/block/mmcblk0p32
+lrwxrwxrwx root     root              2016-05-30 03:33 ddr -> /dev/block/mmcblk0p3
+lrwxrwxrwx root     root              2016-05-30 03:33 devcfg -> /dev/block/mmcblk0p34
+lrwxrwxrwx root     root              2016-05-30 03:33 dsp -> /dev/block/mmcblk0p35
+lrwxrwxrwx root     root              2016-05-30 03:33 efs -> /dev/block/mmcblk0p20
+lrwxrwxrwx root     root              2016-05-30 03:33 fota -> /dev/block/mmcblk0p24
+lrwxrwxrwx root     root              2016-05-30 03:33 fsc -> /dev/block/mmcblk0p26
+lrwxrwxrwx root     root              2016-05-30 03:33 fsg -> /dev/block/mmcblk0p9
+lrwxrwxrwx root     root              2016-05-30 03:33 hyp -> /dev/block/mmcblk0p8
+lrwxrwxrwx root     root              2016-05-30 03:33 keymaster -> /dev/block/mmcblk0p11
+lrwxrwxrwx root     root              2016-05-30 03:33 keystore -> /dev/block/mmcblk0p31
+lrwxrwxrwx root     root              2016-05-30 03:33 limits -> /dev/block/mmcblk0p4
+lrwxrwxrwx root     root              2016-05-30 03:33 lksecapp -> /dev/block/mmcblk0p13
+lrwxrwxrwx root     root              2016-05-30 03:33 modem -> /dev/block/mmcblk0p36
+lrwxrwxrwx root     root              2016-05-30 03:33 modemst1 -> /dev/block/mmcblk0p17
+lrwxrwxrwx root     root              2016-05-30 03:33 modemst2 -> /dev/block/mmcblk0p18
+lrwxrwxrwx root     root              2016-05-30 03:33 mota -> /dev/block/mmcblk0p33
+lrwxrwxrwx root     root              2016-05-30 03:33 msadp -> /dev/block/mmcblk0p15
+lrwxrwxrwx root     root              2016-05-30 03:33 pad -> /dev/block/mmcblk0p16
+lrwxrwxrwx root     root              2016-05-30 03:33 param -> /dev/block/mmcblk0p19
+lrwxrwxrwx root     root              2016-05-30 03:33 persdata -> /dev/block/mmcblk0p38
+lrwxrwxrwx root     root              2016-05-30 03:33 persist -> /dev/block/mmcblk0p28
+lrwxrwxrwx root     root              2016-05-30 03:33 persistent -> /dev/block/mmcblk0p29
+lrwxrwxrwx root     root              2016-05-30 03:33 recovery -> /dev/block/mmcblk0p22
+lrwxrwxrwx root     root              2016-05-30 03:33 rpm -> /dev/block/mmcblk0p6
+lrwxrwxrwx root     root              2016-05-30 03:33 sbl1 -> /dev/block/mmcblk0p1
+lrwxrwxrwx root     root              2016-05-30 03:33 sbl1bak -> /dev/block/mmcblk0p2
+lrwxrwxrwx root     root              2016-05-30 03:33 sec -> /dev/block/mmcblk0p10
+lrwxrwxrwx root     root              2016-05-30 03:33 ssd -> /dev/block/mmcblk0p27
+lrwxrwxrwx root     root              2016-05-30 03:33 steady -> /dev/block/mmcblk0p30
+lrwxrwxrwx root     root              2016-05-30 03:33 system -> /dev/block/mmcblk0p39
+lrwxrwxrwx root     root              2016-05-30 03:33 tz -> /dev/block/mmcblk0p7
+lrwxrwxrwx root     root              2016-05-30 03:33 userdata -> /dev/block/mmcblk0p41
+
+
+root@c9ltechn:/ # fdisk -l dev/block/mmcblk0
+Found valid GPT with protective MBR; using GPT
+
+Disk dev/block/mmcblk0: 122142720 sectors, 2296M
+Logical sector size: 512
+Disk identifier (GUID): 98101b32-bbe2-4bf2-a06e-2bb33d000c20
+Partition table holds up to 128 entries
+First usable sector is 34, last usable sector is 122142686
+
+Number  Start (sector)    End (sector)  Size Name
+     1            8192            9215  512K sbl1
+     2            9216           10239  512K sbl1bak
+     3           10240           10303 32768 ddr
+     4           10304           10367 32768 limits
+     5           10368           14463 2048K aboot
+     6           14464           15487  512K rpm
+     7           15488           19583 2048K tz
+     8           19584           20607  512K hyp
+     9           20608           26751 3072K fsg
+    10           26752           26783 16384 sec
+    11           26784           27807  512K keymaster
+    12           27808           28319  256K cmnlib
+    13           28320           29343  512K lksecapp
+    14           29344           29599  128K apdp
+    15           29600           29855  128K msadp
+    16           29856           49151 9648K pad
+    17           49152           55295 3072K modemst1
+    18           55296           61439 3072K modemst2
+    19           61440           81919 10.0M param
+    20           81920          110591 14.0M efs
+    21          110592          176127 32.0M boot
+    22          176128          241663 32.0M recovery
+    23          241664          255999 7168K bota
+    24          256000          266241 5121K fota
+    25          266242          278511 6135K backup
+    26          278512          284655 3072K fsc
+    27          284656          284671  8192 ssd
+    28          284672          350207 32.0M persist
+    29          350208          352255 1024K persistent
+    30          352256          354303 1024K steady
+    31          354304          355327  512K keystore
+    32          355328          355391 32768 config
+    33          355392          357439 1024K mota
+    34          357440          357951  256K devcfg
+    35          357952          390719 16.0M dsp
+    36          390720          604159  104M modem
+    37          604160          686079 40.0M apnhlos
+    38          686080          704511 9216K persdata
+    39          704512        10108927 4592M system
+    40        10108928        10518527  200M cache
+    41        10518528       122142679 53.2G userdata
+
